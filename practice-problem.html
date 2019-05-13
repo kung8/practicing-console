@@ -10,22 +10,37 @@
 <body>
     <div>Heyo I'm Hunter Luker!</div>
     <img src='https://avatars3.githubusercontent.com/u/37722717?s=460&v=4'/>
-    <h3>Quick Bio: I'm from Alabama. I sat on a bus ride to a soccer game, and felt sick from somebody's homemade fish jerky.</h3>
+    <h3>Quick Bio: I'm from Alabama. I rode a bus once heading to a soccer game, and felt sick from somebody's homemade fish jerky.</h3>
     <p>I love magic! Next time you see me, ask me to show you my latest magic trick!</p>
     <p>I also really love Chocolate Chip Cookies. That is my weakness. 'If I were to die eating one thing, it'd be Chocolate Chip Cookies.'</p>
+    
     <script>
         var x = 5;
-        console.log(x)
+        // console.log(x)
         
-        var name = 'Hunter'
-        console.log(`Whats up ${name}? How was your weekend?`)
+        var name = 'Derek'
+        // console.log(`Whats up ${name}? How was your weekend?`)
         
         //removeEveryOther
         //You are given a string and need to remove every other character (including spaces and special characters)
         //You should return the new string 
         
-        // removeEveryOther(`Whats up ${name}? How was your weekend?`)
+        removeEveryOther(`Whats up ${name}? How was your weekend?`)
 
+        function removeEveryOther(str){
+            // console.log(str)
+            let newStr = str.split('').filter(function(elem,i){
+                // console.log(elem,i)
+                if(i %2 == 0){
+                    console.log(elem)
+                   return elem    
+                }
+            }).join('')
+
+            console.log(newStr)
+            return newStr
+
+        }
 
 
     </script>
